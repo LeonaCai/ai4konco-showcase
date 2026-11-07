@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f9f8f5">
+  <meta name="description" content="AI4KOnCo medical information experience — hackathon UX and API demonstrator, not for clinical use.">
+  <title>AI4KOnCo · Information Companion</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script defer src="/assets/app.js"></script>
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar" aria-label="App navigation">
+    <a href="#experience" class="brand" aria-label="AI4KOnCo home">
+      <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+      <span class="brand-copy"><strong>ai4k<span>onco</span></strong><small>information companion</small></span>
+    </a>
+    <div class="side-label">WORKSPACE</div>
+    <nav class="nav-list" aria-label="Main">
+      <button type="button" data-view="experience" class="nav-item active" aria-current="page"><span class="nav-icon" aria-hidden="true">◫</span><span>Conversation studio</span><span class="nav-index">01</span></button>
+      <button type="button" data-view="knowledge" class="nav-item"><span class="nav-icon" aria-hidden="true">▤</span><span>Knowledge & evidence</span><span class="nav-index">02</span></button>
+      <button type="button" data-view="safety" class="nav-item"><span class="nav-icon" aria-hidden="true">◇</span><span>Safety test lab</span><span class="nav-index">03</span></button>
+      <button type="button" data-view="insights" class="nav-item"><span class="nav-icon" aria-hidden="true">◈</span><span>Clinical insights lab</span><span class="nav-index">04</span></button>
+      <button type="button" data-view="integration" class="nav-item"><span class="nav-icon" aria-hidden="true">⌘</span><span>Developer handoff</span><span class="nav-index">05</span></button>
+    </nav>
+    <div class="side-label side-label-bottom">PROTOTYPE SPECIFICATION</div>
+    <div class="sidebar-facts">
+      <div><span class="dot mint"></span> Demo API <strong>/chat</strong></div>
+      <div><span class="dot violet"></span> 2 languages · 2 audiences</div>
+      <div><span class="dot apricot"></span> Clinician review <strong>pending</strong></div>
+    </div>
+    <div class="sidebar-bottom">
+      <div class="small-ornament" aria-hidden="true">✳</div>
+      <strong>Built to support better conversations.</strong>
+      <p>Prototype for the Health Hack Saar 2026 design challenge.</p>
+      <span>v0.3 · UX, API & synthetic insights</span>
+    </div>
+  </aside>
+
+  <div class="content-shell">
+    <div class="topbar">
+      <div class="topbar-left"><span class="top-kicker">AI4KOnCo / Research prototype</span><span class="top-sep">/</span><span id="current-view">Conversation studio</span></div>
+      <div class="topbar-actions"><span class="status-chip"><span class="status-light"></span>Engine connected</span><a class="toplink" href="/docs" target="_blank" rel="noopener noreferrer">API docs <span aria-hidden="true">↗</span></a></div>
+    </div>
+    <main id="main">
+      <section class="page active" id="view-experience" aria-labelledby="experience-title">
+        <div class="page-heading heading-split">
+          <div><div class="eyebrow"><span class="eyebrow-line"></span> HUMAN-CENTERED MEDICAL INFORMATION</div>
+            <h1 id="experience-title">Better answers.<br><em>Less overwhelm.</em></h1>
+            <p class="intro">A calmer way to understand medical information, ask follow-up questions, and know when the care team should step in.</p>
+          </div>
+          <div class="heading-art" aria-hidden="true"><div class="orbit ring-one"></div><div class="orbit ring-two"></div><div class="orbit ring-three"></div><div class="art-flower">✳</div><span class="art-dot art-dot-a"></span><span class="art-dot art-dot-b"></span></div>
+        </div>
+
+        <div class="notice" role="note"><span class="notice-icon" aria-hidden="true">i</span><div><strong>Hackathon concept, not a medical tool.</strong> Answers are predefined examples and are not clinically reviewed. Never enter real patient details.</div><button id="notice-hide" aria-label="Dismiss this reminder" title="Dismiss reminder">×</button></div>
+
+        <div class="studio-grid">
+          <section class="panel conversation-panel" aria-labelledby="chat-heading">
+            <div class="panel-top chat-panel-top"><div class="mini-orb" aria-hidden="true">✳</div><div><h2 id="chat-heading">Information assistant</h2><div class="subtitle">Gentle explanations · safe boundaries</div></div><span class="live-pill"><span></span> DEMO</span></div>
+            <div class="chat-body" id="chat-body" aria-live="polite" aria-atomic="false">
+              <div class="chat-date">TODAY · GUIDED DEMO</div>
+              <div class="assistant-line"><span class="assistant-avatar" aria-hidden="true">✳</span><div class="message assistant-message greeting-message"><span class="message-label">AI4KOnCo assistant</span><p>Hello, I'm here to help you understand medical information in a clearer way.</p><p>You can explore treatment terms, change the explanation depth, or try a safety scenario below.</p></div></div>
+              <div class="starter-block" id="starter-block"><span class="starter-title">TRY A QUESTION</span><div class="starter-grid"><button type="button" data-prompt="What is chemotherapy?"><span>✦</span> What is chemotherapy?</button><button type="button" data-prompt="What are the side effects of chemotherapy?"><span>☼</span> What about side effects?</button><button type="button" data-prompt="My child is sick."><span>◇</span> My child is sick.</button><button type="button" data-prompt="Which treatment is best for my child?"><span>♡</span> Which treatment is best?</button></div></div>
+            </div>
+            <div class="chat-footer"><form id="chat-form" autocomplete="off"><label class="visually-hidden" for="chat-input">Ask a medical information question (fictional examples only)</label><div class="composer"><input id="chat-input" name="question" type="text" maxlength="1000" placeholder="Ask a question about cancer care…" required><button type="submit" id="send-button" title="Send question" aria-label="Send question"><span aria-hidden="true">↗</span></button></div></form><p>Educational prototype · No diagnosis · No personal patient data</p></div>
+          </section>
+
+          <aside class="studio-right" aria-label="Conversation controls and analysis">
+            <section class="panel controls-panel"><div class="panel-top compact-top"><div><span class="eyebrow label-simple">PERSONALISE THE EXPLANATION</span><h2>Response settings</h2></div><span class="tiny-spark">✧</span></div>
+              <div class="control-body">
+                <label class="field-label">Who is reading?</label>
+                <div class="choice-row" role="group" aria-label="Audience"><button type="button" class="choice active" data-audience="parent">Parent / caregiver</button><button type="button" class="choice" data-audience="child">Child / teen</button></div>
+                <div class="setting-pair"><div><label class="field-label" for="age">Child's age (demo)</label><select id="age"><option value="8">8 years</option><option value="10" selected>10 years</option><option value="13">13 years</option><option value="16">16 years</option></select></div><div><label class="field-label" for="language">Language</label><select id="language"><option value="en">English</option><option value="de">Deutsch</option></select></div></div>
+                <div class="depth-row"><label class="field-label" for="level">Explanation depth</label><span id="level-name">Simple</span></div>
+                <input id="level" type="range" min="0" max="2" value="0" step="1" aria-label="Explanation depth" list="depth-marks"><datalist id="depth-marks"><option value="0"><option value="1"><option value="2"></datalist>
+                <div class="range-marks"><span>Simple</span><span>Standard</span><span>Detailed</span></div>
+                <div class="settings-note" id="age-note">Adjust the level to see how the same key information can be explained differently.</div>
+                <button type="button" class="light-button" id="rerun-button">↻ &nbsp; Regenerate last explanation</button>
+              </div>
+            </section>
+            <section class="panel analysis-panel"><div class="panel-top compact-top"><div><span class="eyebrow label-simple">BEHIND THE RESPONSE</span><h2>Decision trace</h2></div><span class="trace-dot" aria-hidden="true"></span></div>
+              <p class="analysis-placeholder" id="trace-empty">Ask a question to inspect how the backend routed the request and applied safeguards.</p>
+              <div id="trace-content" hidden><div class="trace-result" id="trace-summary"></div><div class="trace-list" id="trace-list"></div><div class="trace-foot">Rule-based demo · no LLM or patient record</div></div>
+            </section>
+            <section class="saved-mini" id="saved-mini"><div class="saved-heading"><span>✎</span><strong>Questions for your doctor</strong><span class="saved-count" id="saved-count">0</span></div><p id="saved-empty">Saved questions appear here, only in this browser tab.</p><div id="saved-items"></div><button type="button" class="saved-copy" id="copy-saved">Copy question list ↗</button></section>
+          </aside>
+        </div>
+        <div class="feature-strip"><div><span class="feature-icon">◎</span><strong>Adaptive</strong><span>Choose the right explanation depth</span></div><div><span class="feature-icon">♢</span><strong>Grounded</strong><span>Visible references and review status</span></div><div><span class="feature-icon">✳</span><strong>Safety-aware</strong><span>Clarification, boundaries and escalation</span></div></div>
+      </section>
+
+      <section class="page" id="view-knowledge" aria-labelledby="knowledge-title">
+        <div class="page-heading"><div class="eyebrow"><span class="eyebrow-line"></span> PROVENANCE BY DESIGN</div><h1 id="knowledge-title">Know where every<br><em>answer comes from.</em></h1><p class="intro">A compact knowledge layer for the prototype. Each topic includes English and German sample explanations at three reading depths. References are links, not evidence of a completed clinical review.</p></div>
+        <div class="metric-grid"><div class="metric-card"><strong id="knowledge-count">3</strong><span>Illustrative topics</span></div><div class="metric-card"><strong>2</strong><span>Languages</span></div><div class="metric-card"><strong>3</strong><span>Explanation depths</span></div><div class="metric-card"><strong class="metric-status">Pending</strong><span>Medical content review</span></div></div>
+        <div class="section-heading"><h2>Knowledge cards</h2><span>PUBLIC REFERENCE LINKS</span></div>
+        <div class="knowledge-grid" id="knowledge-grid"><p>Loading reference topics…</p></div>
+        <div class="approach-banner"><div class="banner-symbol" aria-hidden="true">✧</div><div><span class="eyebrow label-simple">THE DESIGN DECISION</span><h2>One set of facts. Different ways of explaining them.</h2><p>Reading depth changes presentation, not the clinical facts. The system flags unsupported personal medical decisions instead of inventing an answer.</p></div></div>
+      </section>
+
+      <section class="page" id="view-safety" aria-labelledby="safety-title">
+        <div class="page-heading heading-split"><div><div class="eyebrow"><span class="eyebrow-line"></span> RELIABLE INTERACTION PATTERNS</div><h1 id="safety-title">A good assistant also<br><em>knows when to stop.</em></h1><p class="intro">Run six reproducible UX scenarios against the real <code>/chat</code> endpoint. These are functional checks of prototype behavior—not clinical validation.</p></div><div class="safety-emblem" aria-hidden="true">✳<span>SAFETY FIRST</span></div></div>
+        <div class="safety-hero"><div><span class="eyebrow label-simple">SCENARIO TEST SUITE</span><h2>Make behavior visible, not just promises.</h2><p>Educational answers, ambiguity handling, safe refusal, urgent escalation and fallback are all explicit routes.</p></div><button type="button" class="primary-button" id="run-tests">Run all scenarios <span aria-hidden="true">↗</span></button></div>
+        <div class="test-summary" id="test-summary">Select a scenario to run it, or execute the full suite.</div>
+        <div class="scenarios-list" id="scenarios-list"><p>Loading scenarios…</p></div>
+        <div class="guardrails"><div><span class="guardrail-icon">1</span><h3>No unsupported diagnosis</h3><p>A question about one child's treatment is handed back to their medical team.</p></div><div><span class="guardrail-icon">2</span><h3>Clarify when uncertain</h3><p>Vague input leads to a clarifying question, not a speculative answer.</p></div><div><span class="guardrail-icon">3</span><h3>Do not hide limitations</h3><p>Sources, missing clinical review and general-information boundaries remain visible.</p></div></div>
+      </section>
+
+
+      <section class="page" id="view-insights" aria-labelledby="insights-title">
+        <div class="page-heading"><div class="eyebrow"><span class="eyebrow-line"></span> SYNTHETIC DATA ONLY · FUTURE CLINICAL INSIGHTS PIPELINE</div>
+          <h1 id="insights-title">Meaningful signals.<br><em>Human decisions.</em></h1>
+          <p class="intro">Our backend analysis concept complements the child's virtual companion. The child-facing team collects information; our role is consent-aware extraction, trend summaries and evidence-ready review. These cases are fictional demonstrations, not clinical predictions.</p>
+        </div>
+        <div class="metric-grid"><div class="metric-card"><strong>3</strong><span>Fictional test cases</span></div><div class="metric-card"><strong>0</strong><span>Real patient records</span></div><div class="metric-card"><strong>0</strong><span>ML models trained</span></div><div class="metric-card"><strong>Human</strong><span>Review required</span></div></div>
+        <div class="section-heading"><h2>Sample analysis scenarios</h2><span>PREWRITTEN · NOT MEDICALLY VALIDATED</span></div>
+        <div class="knowledge-grid" id="insights-grid"><p>Loading synthetic scenarios…</p></div>
+        <div class="approach-banner"><div class="banner-symbol" aria-hidden="true">◈</div><div><span class="eyebrow label-simple">RESEARCH ROADMAP — NOT IMPLEMENTED</span><h2>Child inputs → authorized analysis → clinician-reviewed insights.</h2><p>Later, subject to ethical approval, explicit purpose-limited authorization and validation: pediatric symptom extraction, longitudinal PRO summaries, caregiver topic clustering and separately opt-in community support. No automatic disclosure of a child's secrets and no automatic cancer-stage prediction.</p></div></div>
+      </section>
+
+      <section class="page" id="view-integration" aria-labelledby="integration-title">
+        <div class="page-heading"><div class="eyebrow"><span class="eyebrow-line"></span> READY FOR TEAM INTEGRATION</div><h1 id="integration-title">Designed to connect.<br><em>Built to extend.</em></h1><p class="intro">The child's interface can use the same JSON endpoint. Visual design and backend reasoning stay separate, so tomorrow's merge is a small interface task—not a rewrite.</p></div>
+        <div class="handoff-top"><div class="handoff-step"><span>01</span><strong>Child / parent front end</strong><small>UI, avatar, input, response cards</small></div><div class="handoff-arrow">↔</div><div class="handoff-step emphasized"><span>02</span><strong>POST /chat</strong><small>Stable request / response contract</small></div><div class="handoff-arrow">↔</div><div class="handoff-step"><span>03</span><strong>Information engine</strong><small>Intent, safety, language, sources</small></div></div>
+        <div class="api-card"><div class="api-header"><div><span class="method-pill">POST</span><code id="api-path">/chat</code></div><button type="button" class="copy-button" id="copy-request">Copy example request</button></div><div class="code-grid"><div><div class="code-title">REQUEST JSON</div><pre id="request-code">{
+  "question": "What is chemotherapy?",
+  "language": "en",
+  "audience": "child",
+  "age": 10,
+  "level": "simple"
+}</pre></div><div><div class="code-title">RESPONSE JSON (excerpt)</div><pre id="response-code">{
+  "intent": "chemotherapy",
+  "answer": "...",
+  "source_title": "...",
+  "review_status": "demo_not_clinically_reviewed",
+  "needs_clinician": false
+}</pre></div></div></div>
+        <div class="integration-bottom"><div class="panel api-help"><span class="eyebrow label-simple">INTEGRATION NOTES</span><h2>What your teammate needs</h2><p>Use the existing <code>POST /chat</code> endpoint from the child's webpage, pass age and language, then render <code>answer</code>, <code>source_url</code> and <code>needs_clinician</code>. The original API response fields are preserved.</p><a href="/docs" target="_blank" rel="noopener noreferrer">Explore interactive Swagger API ↗</a></div><div class="panel api-help"><span class="eyebrow label-simple">HONEST PROJECT SCOPE</span><h2>What's real vs. next</h2><p><strong>Working:</strong> local Python API, bilingual explanation modes, fixed-topic knowledge, policy routing and demonstration interface.</p><p><strong>Future:</strong> clinically reviewed content, approved RAG/LLM, authentication, patient-specific context, human usability evaluation.</p></div></div>
+      </section>
+    </main>
+    <footer class="global-footer"><span>AI4KOnCo · Hackathon information experience</span><span>Independent UX prototype · Not affiliated with any deployed clinical system</span></footer>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+{
+  "chemotherapy": {
+    "source_title": "National Cancer Institute — Chemotherapy to Treat Cancer",
+    "source_url": "https://www.cancer.gov/about-cancer/treatment/types/chemotherapy",
+    "answers": {
+      "en": {
+        "simple": "Chemotherapy uses medicines to fight cancer. The treatment team can explain which medicines are planned for your child.",
+        "standard": "Chemotherapy uses medicines to kill cancer cells or slow their growth. The medicines and schedule depend on the cancer and the treatment plan. Your child's oncology team can explain what applies in your situation.",
+        "detailed": "Chemotherapy uses anticancer medicines that interfere with processes needed for cell growth or survival. The choice of medicines, dose, timing and monitoring depends on the specific diagnosis and treatment plan. This is general information, not an assessment of an individual child's treatment."
+      },
+      "de": {
+        "simple": "Eine Chemotherapie nutzt Medikamente gegen Krebs. Das Behandlungsteam kann erklären, welche Medikamente für Ihr Kind geplant sind.",
+        "standard": "Eine Chemotherapie verwendet Medikamente, die Krebszellen zerstören oder ihr Wachstum bremsen. Welche Medikamente und welcher Zeitplan geeignet sind, hängt von der Erkrankung und dem Behandlungsplan ab.",
+        "detailed": "Bei einer Chemotherapie werden Medikamente eingesetzt, die Prozesse des Zellwachstums oder Zellüberlebens beeinflussen. Wirkstoffe, Dosierung, Behandlungsdauer und Überwachung richten sich nach der Diagnose und dem konkreten Behandlungsplan. Dies ist keine individuelle Behandlungsempfehlung."
+      }
+    }
+  },
+  "side_effects": {
+    "source_title": "National Cancer Institute — Chemotherapy to Treat Cancer",
+    "source_url": "https://www.cancer.gov/about-cancer/treatment/types/chemotherapy",
+    "answers": {
+      "en": {
+        "simple": "Cancer medicines may also affect some healthy cells. This can cause unwanted effects. Your care team can tell you which effects to watch for with your child's treatment.",
+        "standard": "Chemotherapy can affect healthy cells as well as cancer cells. Side effects may include tiredness, nausea, mouth sores or hair loss, depending on the medicines. Ask the oncology team what to expect and when to contact them.",
+        "detailed": "Some chemotherapy medicines also affect fast-growing healthy tissues, including cells in the digestive tract and hair follicles. Possible effects include fatigue, nausea, mouth sores and hair loss. Risks vary by regimen and patient; the child's treating team should provide the applicable monitoring and contact instructions."
+      },
+      "de": {
+        "simple": "Krebsmedikamente können auch gesunde Zellen beeinflussen. Dadurch können Nebenwirkungen auftreten. Das Behandlungsteam erklärt Ihnen, worauf Sie achten sollten.",
+        "standard": "Chemotherapie kann neben Krebszellen auch gesunde Zellen beeinflussen. Je nach Medikament können unter anderem Müdigkeit, Übelkeit, Entzündungen im Mund oder Haarausfall auftreten. Fragen Sie das Behandlungsteam nach wichtigen Warnzeichen.",
+        "detailed": "Einige Chemotherapeutika beeinflussen auch schnell wachsende gesunde Gewebe, beispielsweise Schleimhautzellen und Haarfollikel. Mögliche Nebenwirkungen sind Müdigkeit, Übelkeit, Entzündungen im Mund und Haarausfall. Welche Risiken und Warnzeichen relevant sind, muss das behandelnde Team erklären."
+      }
+    }
+  },
+  "doctor_questions": {
+    "source_title": "National Cancer Institute — Types of Cancer Treatment",
+    "source_url": "https://www.cancer.gov/about-cancer/treatment/types",
+    "answers": {
+      "en": {
+        "simple": "You could ask: What treatment is planned? What side effects should we watch for? Who should we call if we are worried?",
+        "standard": "Consider asking the team about the purpose and schedule of treatment, expected side effects, signs that need a phone call, and who to contact outside office hours. You can save these questions for your appointment.",
+        "detailed": "A consultation checklist may cover the goals of therapy, alternatives, anticipated benefits and adverse effects, monitoring, warning signs, contact arrangements, and remaining questions about consent. Your care team can personalize this checklist."
+      },
+      "de": {
+        "simple": "Sie könnten fragen: Welche Behandlung ist geplant? Auf welche Nebenwirkungen sollen wir achten? Wen können wir bei Sorgen anrufen?",
+        "standard": "Fragen Sie nach Ziel und Ablauf der Behandlung, möglichen Nebenwirkungen, wichtigen Warnzeichen und den Kontaktmöglichkeiten außerhalb der Sprechzeiten. Sie können die Fragen für den Termin speichern.",
+        "detailed": "Eine Gesprächsliste kann Therapieziele, Alternativen, erwartete Vorteile und Nebenwirkungen, Überwachung, Warnzeichen, Kontaktmöglichkeiten und offene Fragen zur Einwilligung enthalten. Das Behandlungsteam kann sie individuell ergänzen."
+      }
+    }
+  }
+}
